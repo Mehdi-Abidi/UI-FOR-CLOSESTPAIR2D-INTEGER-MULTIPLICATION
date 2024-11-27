@@ -1,0 +1,172 @@
+/* Dark Mode Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #eaeaea; /* Light text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Centering the container */
+.container {
+    background-color: #1f1f1f; /* Slightly lighter background for the container */
+    border-radius: 8px;
+    padding: 30px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    overflow-y: auto; 
+    max-height: 80vh;
+}
+.container2 {
+    background-color: #1f1f1f; /* Slightly lighter background for the container */
+    border-radius: 8px;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    overflow-y: auto; 
+    max-height: 80vh;
+}
+.container1 {
+    background-color: #1f1f1f; /* Slightly lighter background for the container */
+    border-radius: 8px;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 0.3s ease-in-out;
+    overflow-y: auto; 
+    max-height: 80vh;
+}
+
+/* Header styling */
+header h1 {
+    font-size: 2.5rem;
+    color: #66ccff; /* Cool blue for the main title */
+    margin-bottom: 20px;
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden;    /* Hide overflow if the text is too large */
+    text-overflow: ellipsis
+}
+
+header h2 {
+    font-size: 1.3rem;
+    color: #f4f4f4; /* Slightly lighter than the body text */
+    margin-bottom: 20px;
+}
+
+/* Styling the list of members */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #f4f4f4;
+    transition: color 0.3s ease;
+}
+
+li:hover {
+    color: #66ccff; /* Highlight the names on hover */
+}
+
+/* Button Styling */
+button {
+    background-color: #3f9e94; /* Greenish-blue background */
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #4f9a8e; /* Slightly darker when hovered */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+button:active {
+    background-color: #357f73; /* Darker shade when clicked */
+    transform: scale(1); /* Reset scale on click */
+}
+
+/* Form and Input Field Styles */
+form {
+    margin-top: 40px;
+}
+
+label {
+    font-size: 1.2rem;
+    display: block;
+    margin-top: 10px;
+    color: #f4f4f4;
+}
+
+input, select {
+    background-color: #2a2a2a; /* Dark background for input fields */
+    color: #eaeaea; /* Light text */
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 8px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    background-color: #3a3a3a;
+    border-color: #66ccff; /* Highlight border on focus */
+}
+
+button:focus {
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Styling the entire page's layout and responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.1rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+
+/* Result area with scrolling */
+.result {
+    max-height: 60vh;  /* Limit the maximum height of the result area */
+    overflow-y: auto;  /* Enable scrolling */
+    text-align: left;   /* Align text to left for better readability */
+}
